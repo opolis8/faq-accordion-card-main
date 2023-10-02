@@ -1,0 +1,57 @@
+.Left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  .Shadow {
+    .LadyShadowDesktop {
+      position: absolute;
+
+      left: -32em;
+      top: -18rem;
+    }
+    .LadyShadowMobile {
+      display: none;
+    }
+  }
+
+  .women {
+    position: absolute;
+    width: 30rem;
+    left: -4rem;
+    top: 3.5rem;
+    transform: scale(1.2);
+
+    .LadyDesktop {
+      object-fit: cover;
+    }
+    .LadyMobile {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .left {
+      overflow: visible;
+    }
+    .Shadow {
+      .LadyShadowDesktop {
+        display: none;
+      }
+      .LadyShadowMobile {
+        position: absolute;
+      }
+    }
+    .women {
+      .LadyDesktop {
+        display: none;
+      }
+      .LadyMobile {
+        position: absolute;
+        display: block;
+        top: -16rem;
+        transform: scale(0.6);
+      }
+    }
+  }
+}
